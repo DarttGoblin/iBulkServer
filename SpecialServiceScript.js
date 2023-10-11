@@ -55,6 +55,6 @@ app.post("/", (req, res) => {
     catch (error) {console.log(error);}
 });
 
-app.get("/", (req,res)=>{console.log("hello amigo elkhonayeb")});
+app.get("/", (req,res)=>{res.send("hello amigo elkhonayeb")});
 
 app.listen(port, () => console.log("Listening on port " + port));
